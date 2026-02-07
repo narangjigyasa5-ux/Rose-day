@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You, On Rose Day</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --blush: #f7c6cc;
+  --cream: #fff6ec;
+  --rose: #c94a5a;
+  --soft-shadow: rgba(0,0,0,0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg, var(--cream), var(--blush));
+  color: #4a2c2a;
+  line-height: 1.8;
+}
+
+/* SECTION SPACING */
+section {
+  padding: 80px 10%;
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(
+      rgba(255,246,236,0.85),
+      rgba(255,246,236,0.85)
+    ),
+    url("rose1.jpg") center/contain no-repeat;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.4rem;
+  color: var(--rose);
+  animation: fadeUp 1.5s ease;
+}
+
+.hero p {
+  font-style: italic;
+  margin-top: 12px;
+  animation: fadeUp 2s ease;
+}
+
+/* MESSAGE CARD */
+.message {
+  max-width: 720px;
+  margin: auto;
+  background: rgba(255,255,255,0.7);
+  padding: 45px;
+  border-radius: 22px;
+  text-align: center;
+  box-shadow: 0 20px 40px var(--soft-shadow);
+}
+
+/* GALLERY */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 22px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 20px;
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 15px 30px var(--soft-shadow);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.gallery img:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 25px 45px rgba(0,0,0,0.12);
+}
+
+/* LOVE NOTE */
+.note {
+  max-width: 680px;
+  margin: auto;
+  background: var(--cream);
+  padding: 55px;
+  border-radius: 28px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  box-shadow: 0 25px 50px var(--soft-shadow);
+}
+
+.note span {
+  display: block;
+  margin-top: 26px;
+  color: var(--rose);
+  font-size: 1.2rem;
+}
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <h1>For You, On Rose Day</h1>
+    <p>A small rose, a thousand feelings.</p>
+  </div>
+</section>
+
+<!-- EMOTIONAL MESSAGE -->
+<section>
+  <div class="message">
+    <p>
+      I didn’t want something grand.<br>
+      I wanted something gentle.<br><br>
+      Something that feels like me thinking of you quietly,
+      smiling for no reason,
+      hoping you feel loved, even from afar.
+      I know i fight, throw tantrums but i love you always.
+    </p>
+  </div>
+</section>
+
+<!-- GALLERY WITH YOUR IMAGES -->
+<section>
+  <div class="gallery">
+    <img src="rose1.jpg" alt="Cute rose illustration 1">
+    <img src="rose2.jpg" alt="Cute rose illustration 2">
+    <img src="rose3.jpg" alt="Cute rose illustration 3">
+    <img src="rose4.jpg" alt="Cute rose illustration 4">
+  </div>
+</section>
+
+<!-- CLOSING LOVE NOTE -->
+<section>
+  <div class="note">
+    <p>
+      This rose isn’t just a flower.<br>
+      It’s every unsaid word, every soft moment, every feeling I hold for you.
+    </p>
+    <span>
+      This rose is a reminder, my love always finds its way back to you 🌹
+    </span>
+  </div>
+</section>
+
+</body>
+</html>
